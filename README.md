@@ -7,6 +7,20 @@ _A Teamspeak 3 Server built on Alpine Linux (using glibc)_
 * Easy, optional voluming of logs, db, and query_ip_*list.txt files
 * Pass any TS3 startup flags with `docker run`
 
-### Credits
+## docker-compose.yml (Example)
+```
+version: '3'
+services:
+  web:
+    image: nshtg/ts3-alpine
+    container_name: ts3
+    ports:
+      - "9987:9987/udp"
+    restart: always
+    volumes:
+      - "./data:/data"
+```
 
-Based [rodaine/teamspeak3-allpine](https://github.com/rodaine/teamspeak3-alpine)!
+
+## Credits
+Based on [rodaine/teamspeak3-allpine](https://github.com/rodaine/teamspeak3-alpine)!
