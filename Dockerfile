@@ -1,9 +1,9 @@
-FROM frolvlad/alpine-glibc:alpine-3.6
+FROM frolvlad/alpine-glibc:alpine-3.10
 MAINTAINER nshtg <mail@msch.pw>
 
 ENV TS_DIR="/opt/teamspeak" \
-    TS_RELEASE="http://dl.4players.de/ts/releases/3.0.13.8/teamspeak3-server_linux_amd64-3.0.13.8.tar.bz2" \
-    TS_SHA256="460c771bf58c9a49b4be2c677652f21896b98a021d7fff286e59679b3f987a59" \
+    TS_RELEASE="https://files.teamspeak-services.com/releases/server/3.9.1/teamspeak3-server_linux_amd64-3.9.1.tar.bz2" \
+    TS_SHA256="0a0497d6a8e5f3f48e10db8f89875286d6aa3388f171f828cf5d426cf305f16f" \
     TS_ARTIFACT="teamspeak.tar.bz2" \
     TS_DATA="/data"
 
